@@ -38,6 +38,7 @@ gem "fog-aws"
 gem 'rollbar'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+gem 'carrierwave-aws'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
