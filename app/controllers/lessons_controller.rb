@@ -15,7 +15,7 @@ class LessonsController < ApplicationController
         if current_user.enrolled_in?(@course)
           return current_user.enrolled_in?(@course)
         else 
-          redirect_to course_path, alert: 'You need to enroll in  order to access this lesson'
+          redirect_to course_path(current_lesson.section.course), alert: 'You need to enroll in  order to access this lesson'
         end
       end
       
