@@ -11,7 +11,7 @@
   </div>
   <script>
   $(function() {
-    alert('Hello moto'); 
+    $('.lessons li').hide('slow');
   });
   </script>
   <br />
@@ -21,7 +21,7 @@
       <li>
         <%= section.title %>
         <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
-        <ul>
+        <ul class ="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>
             <li>
               <b><%= lesson.title %></b>
