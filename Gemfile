@@ -68,3 +68,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ranked-model'
 gem 'jquery-ui-rails'
+gem 'font-awesome-sass'
